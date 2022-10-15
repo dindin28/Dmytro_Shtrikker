@@ -3,13 +3,15 @@
 ## First way to check homework
 
 1. Go to directory, where files storing
-2. Run all <b>task_*.py</b> separately, where * is number of task
+2. Run all <b>task_*.py</b> separately, where * is number of task(or <b>task_*_extra.py</b>)
     ```
     python task_1.py
     python task_2.py
     python task_3.py
     python task_4.py
     python task_5.py
+    python task_1_extra.py
+    python task_2_extra.py
     ```
 
 ## Second way to check homework

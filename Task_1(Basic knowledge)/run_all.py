@@ -3,6 +3,8 @@ import task_2
 import task_3
 import task_4
 import task_5
+import task_1_extra
+import task_2_extra
 
 print("====================Task #1====================")
 first_task_lists = []
@@ -44,4 +46,25 @@ print("====================Task #5====================")
 fifth_task_string = "Fired:Corwill;Wilfred:Corwill;Barney:TornBull;Betty:Tornbull;Bjon:Tornbull;Raphael:Corwill;Alfred:Corwill"
 print("Raw string:", fifth_task_string)
 print("Formatted string:", task_5.format_string(fifth_task_string))
+print("")
+
+print("=================Task #1 Extra=================")
+first_task_extra_list = []
+first_task_extra_list.append(12)
+first_task_extra_list.append(513)
+first_task_extra_list.append(2017)
+first_task_extra_list.append(9)
+first_task_extra_list.append(111)
+first_task_extra_list.append(531)
+for value in first_task_extra_list:
+    print(f"Checking next rearranging bigger value of {value} gives {task_1_extra.next_bigger(value)}")
+print("")
+
+print("=================Task #2 Extra=================")
+second_task_extra_list = []
+second_task_extra_list.append(2149583361)
+second_task_extra_list.append(32)
+second_task_extra_list.append(0)
+for value in second_task_extra_list:
+    print(f'Value {value} represents "{task_2_extra.convert_to_ipv4(value)}" in IPv4 format')
 print("")
