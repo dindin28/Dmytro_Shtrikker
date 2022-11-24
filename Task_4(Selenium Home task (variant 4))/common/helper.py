@@ -72,11 +72,11 @@ class TimeShifterTest:
         found_row.find_element(By.XPATH, '//div[contains(., "12.00")]')
 
     def remove_row_and_check(self):
-        xpath_delete = f'//div[@class="oxd-table-row oxd-table-row--with-border" and contains(., "Xy")]//i[@class="oxd-icon bi-trash"]'
+        xpath_delete = f'//div[@class="oxd-table-row oxd-table-row--with-border" and contains(., "{shift_name}")]//i[@class="oxd-icon bi-trash"]'
         found_row = self.driver.find_element(By.XPATH, xpath_delete)
         found_row.find_element(By.XPATH, '//i[@class="oxd-icon bi-trash"]').click()
         self.driver.find_element(By.XPATH, '//button[contains(.,"Yes, Delete")]').click()
-        time.sleep(10)
+        time.sleep(5)
         try:
             self.driver.find_element(By.XPATH, xpath_delete)
             assert 'Element not removed'
