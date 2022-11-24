@@ -10,8 +10,7 @@ delay_to_load_page = 10  # seconds
 login_username = 'Admin'
 login_password = 'admin123'
 
-# shift_name = 'RandomShiftName'
-shift_name = 'Xy'
+shift_name = 'RandomShiftName'
 
 class TimeShifterTest:
     def __init__(self):
